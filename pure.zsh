@@ -128,10 +128,10 @@ prompt_pure_preprompt_render() {
 
 
 	# add a newline between commands
-  FIRST_COMMAND_THRESHOLD=1
-  if [[ "$PURER_PROMPT_COMMAND_COUNT" -gt "$FIRST_COMMAND_THRESHOLD" ]]; then
-    preprompt+=$'\n'
-  fi
+  #FIRST_COMMAND_THRESHOLD=1
+  #if [[ "$PURER_PROMPT_COMMAND_COUNT" -gt "$FIRST_COMMAND_THRESHOLD" ]]; then
+  #  preprompt+=$'\n'
+  #fi
 
 
   # begin with path, colored by vim-mode
@@ -145,9 +145,11 @@ prompt_pure_preprompt_render() {
 	# execution time
 	preprompt+="%B%F{242}${prompt_pure_cmd_exec_time}%f%b"
 	# show indicator if previous command failed
-	preprompt+="%(?.. ⚠️️ )"
+	#preprompt+="%(?..?%F{red}$:$)"
+	#preprompt+="%(?.. !)"
+	preprompt+="%(?..%F{red})"
 
-	preprompt+=" "
+	preprompt+=" $%f "
 
 	# make sure prompt_pure_last_preprompt is a global array
 	typeset -g -a prompt_pure_last_preprompt
