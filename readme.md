@@ -2,7 +2,7 @@
 
 > Pretty one-line ZSH prompt based on [@sindresorhus](https://github.)'s [Pure](https://github.com/sindresorhus/pure)
 
-![screen shot 2017-03-18 at 12 39 59 pm](https://cloud.githubusercontent.com/assets/583202/24074057/12a25362-0bd8-11e7-9cf1-9bf689ac4ae1.png)
+![screen shot 2017-03-18 at 12 39 59 pm](https://raw.githubusercontent.com/mathrath/purer/master/screenshot.png)
 ## Install
 
 Can be installed with `npm` or [manually](https://github.com/sindresorhus/pure/blob/master/readme.md#manually). Requires Git 2.0.0+ and ZSH 5.2+.
