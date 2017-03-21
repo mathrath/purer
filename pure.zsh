@@ -292,7 +292,7 @@ prompt_pure_check_git_arrows() {
 	(( left > 0 )) && arrows+=${PURE_GIT_UP_ARROW:-⇡}
 
 	[[ -n $arrows ]] || return
-	typeset -g REPLY=" $arrows"
+	typeset -g REPLY="$arrows"
 }
 
 prompt_pure_async_callback() {
